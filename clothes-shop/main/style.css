@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Gothic A1", sans-serif;
+}
+
+nav{
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin: 0; /* because margin will by default be added */
+}
+
+nav li{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #515151;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+
+.main-section{
+    color: #f6f6f6;
+    position: relative;
+    height: 100vh;
+}
+
+.main-section img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}  
+
+.main-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.santas-helpers{
+    position: absolute;
+    bottom: 0;
+    margin-left: 3rem;
+    margin-bottom: 5rem;
+}
+
+.santas-helpers h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.santas-helpers p{
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: medim;
+}
+
+
+.card-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-family: "Gothic A1", sans-serif;
+}
+
+
+
+.sweet-dreams-section{
+    position: relative;
+    width: 100vw;
+}
+
+.sweet-dreams-section img{
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+    object-position: center;
+}  
+
+.sweet-dreams-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sweet-dreams{
+    position: absolute;
+    bottom: 0;
+    margin-left: 3rem;
+    margin-bottom: 5rem;
+}
+
+.sweet-dreams h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.sweet-dreams p{
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: medim;
+    color: white;
+}

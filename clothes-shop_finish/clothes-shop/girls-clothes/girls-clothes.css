@@ -1,0 +1,15 @@
+.girls-clothes-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card {
+  width: 25%;
+}
+
+/*# sourceMappingURL=girls-clothes.css.map */

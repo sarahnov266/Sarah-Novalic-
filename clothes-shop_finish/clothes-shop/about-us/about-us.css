@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Gothic A1", sans-serif;
+}
+
+.about-us-text {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5d5a65;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.about-us-text h2 {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.about-us-text p {
+  padding-top: 1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-us-location {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #f6f6f6;
+}
+
+.about-us-location iframe {
+  width: 100%;
+  height: 60vh;
+  margin: 2rem;
+}
+
+/*# sourceMappingURL=about-us.css.map */

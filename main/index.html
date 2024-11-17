@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothes Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Just+Another+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+   <nav class="navbar sticky-top bg-body-tertiary">
+      <div class="navbar-logo"><a href="../main/index.html">LittleStars</a></div>
+      <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+      <ul>
+        <li><a href="#sweet-dreams">SWEET DREAMS</a></li>
+        <li><a href="#gift-shop">GIFTS</a></li>
+        <li><a href="../about-us/about-us.html" target="_blank">ABOUT US</a></li>
+        <li><a href="../contact/contact.html" target="_blank">CONTACT </a></li>
+        <li>
+          <a href="../boys-clothes/boys-clothes.html" target="_blank"
+            >BOYS CLOTHES</a
+          >
+        </li>
+        <li>
+          <a href="../girls-clothes/girls-clothes.html" target="_blank"
+            >GIRLS CLOTHES</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <section class="main-section">
+      <img src="./main-photo.webp" alt="Main photo" />
+      <div class="main-overlay"></div>
+      <div class="santas-helpers">
+        <h1 class="display-1">Santa's little helpers</h1>
+        <p>This year's Christmas collection</p>
+      </div>
+    </section> 
+    <div class="hstack gap-3">
+    <section class="card-section">
+      <div class="card" style="width: 18rem; border: none; align-items: center">
+        <img src="./boy.avif" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text" style="font-weight: 600">Boys clothes</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border: none; align-items: center">
+        <img src="./girl.avif" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text" style="font-weight: 600">Girls clothes</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+    <section id="sweet-dreams" class="sweet-dreams-section">
+      <img src="./sweet-dreams-photo.webp" alt="Sweet dreams photo" />
+      <div class="sweet-dreams-overlay"></div>
+      <div class="sweet-dreams">
+        <h1 class="display-1">Sweet dreams</h1>
+        <p>Soft and timeless nightwear</p>
+      </div>
+    </section>
+
+
+
+    <section id="gift-shop" class="the-gift-shop-section">
+      <img src="./the-gift-shop-photo.webp" alt="The gift shop photo" />
+      <div class="the-gift-shop-overlay"></div>
+      <div class="the-gift-shop">
+        <h1 class="display-1">The gift shop</h1>
+        <p>Soft and timeless Christmas gifts ✨</p>
+      </div>
+    </section>
+
+
+
+    <footer>
+      <div class="vstack gap-3">
+        <p>Foundations Of The Web Development</p>
+        <p>Sarah Novalić</p>
+    </div>
+    </footer>
+      <script>
+    function toggleMenu() {
+        const menu = document.querySelector('nav ul');
+        menu.classList.toggle('active');
+    }
+</script>
+  </body>
+
+</html>

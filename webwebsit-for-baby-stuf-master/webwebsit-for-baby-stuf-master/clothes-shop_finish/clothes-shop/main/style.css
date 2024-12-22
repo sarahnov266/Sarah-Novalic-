@@ -1,0 +1,290 @@
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Gothic A1", sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar-logo a {
+  font-weight: 400;
+  color: #590b0a;
+  font-family: "Just Another Hand", cursive;
+  font-size: xx-large;
+}
+
+/* Navigation Bar Styling */
+nav {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation List Styling */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  margin: 0; /* Remove default margin */
+}
+
+/* List Item Styling */
+nav li {
+  list-style: none;
+}
+
+/* Anchor Tag Styling */
+nav a {
+  text-decoration: none;
+  color: #590b0a;
+  font-size: 1rem;
+}
+
+/* Hover Effect for Links */
+nav a:hover {
+  color: hsl(1, 80%, 35%);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  /* Adjust navbar to a column layout */
+  nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* Hide the menu by default */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    padding-top: 1rem;
+  }
+  /* Show the menu when active */
+  nav ul.active {
+    display: flex;
+  }
+  /* Adjust logo size for smaller screens */
+  .navbar-logo a {
+    font-size: 1.5rem;
+  }
+  /* Hamburger Menu Button (visible on small screens) */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+  /* Styling for hamburger icon lines */
+  .hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: #590b0a;
+    border-radius: 5px;
+  }
+}
+.main-section {
+  color: #f6f6f6;
+  position: relative;
+  height: 100vh;
+}
+
+.main-section img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.main-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.santas-helpers {
+  position: absolute;
+  bottom: 0;
+  margin-left: 3rem;
+  margin-bottom: 5rem;
+}
+
+.santas-helpers h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.santas-helpers p {
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-weight: medium;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  font-family: "Gothic A1", sans-serif;
+}
+
+.sweet-dreams-section {
+  position: relative;
+  width: 100vw;
+}
+
+.sweet-dreams-section img {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sweet-dreams-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sweet-dreams {
+  position: absolute;
+  bottom: 0;
+  margin-left: 3rem;
+  margin-bottom: 5rem;
+}
+
+.sweet-dreams h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.sweet-dreams p {
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-weight: medium;
+  color: white;
+}
+
+.the-gift-shop-section {
+  position: relative;
+  width: 100vw;
+}
+
+.the-gift-shop-section img {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.the-gift-shop-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.the-gift-shop {
+  position: absolute;
+  bottom: 0;
+  margin-left: 3rem;
+  margin-bottom: 5rem;
+}
+
+.the-gift-shop h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.the-gift-shop p {
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-weight: medium;
+  color: white;
+}
+
+footer {
+  background-color: #f2ede5;
+  padding: 4rem;
+}
+
+footer p {
+  color: #590b0a;
+  text-align: center;
+  font-size: large;
+  /* font-weight: 500;*/
+}
+
+#eng, #bos{
+  cursor: pointer;
+}
+
+#map{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2ede5;
+  padding-top: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+#accordion{
+  position: absolute;
+  display: block;
+  background-color: rgb(255, 255, 255);
+}
+
+.accordingMenu{
+  padding: 15px;
+}
+
+
+body {
+  font-family: Courier, sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  background-color: #032541;
+}
+
+input {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.weather_description {
+  color: black;
+  margin-top: 2rem;
+}

@@ -1,0 +1,13 @@
+.boys-clothes-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card {
+  width: 25%;
+}

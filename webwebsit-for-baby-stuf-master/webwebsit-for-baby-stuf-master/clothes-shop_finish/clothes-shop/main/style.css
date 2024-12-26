@@ -245,4 +245,46 @@ footer p {
   /* font-weight: 500;*/
 }
 
+#eng, #bos{
+  cursor: pointer;
+}
+
+#map{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2ede5;
+  padding-top: 15px;
+}
+
 /*# sourceMappingURL=style.css.map */
+
+#accordion{
+  position: absolute;
+  display: block;
+  background-color: rgb(255, 255, 255);
+}
+
+.accordingMenu{
+  padding: 15px;
+}
+
+
+body {
+  font-family: Courier, sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  background-color: #032541;
+}
+
+input {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.weather_description {
+  color: black;
+  margin-top: 2rem;
+}

@@ -1,0 +1,688 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*//*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}*/
+/* HTML5 display-role reset for older browsers */
+/*article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html { line-height: 1.5; font-family: sans-serif; font-weight: normal; color: rgba(0,0,0,0.87); }
+body { margin:0; }
+*/
+/*nav { background:#00acc1; position:fixed; top:0; left:0; width:100%; }
+nav ul li { display:block; float:left; width:33.33%; text-align:center; }
+nav ul li a { color:#fff; text-decoration:none; }*/
+/*
+main#spapp > section {  background:#ffcdd2; }  
+main#spapp > section#view_2 { background:#90caf9; }  
+main#spapp > section#view_3 { background:#a5d6a7; } 
+main#spapp > section#error_404 { background:#b71c1c; color:#fff; }
+main#spapp h1 { font-size: 4.2rem; line-height: 110%; margin: 2.1rem 0 1.68rem 0; text-align:center; }
+
+*/
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Gothic A1", sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar-logo a {
+  font-weight: 400;
+  color: #590b0a;
+  font-family: "Just Another Hand", cursive;
+  font-size: xx-large;
+}
+
+/* Navigation Bar Styling */
+nav {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation List Styling */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  margin: 0; /* Remove default margin */
+}
+
+/* List Item Styling */
+nav li {
+  list-style: none;
+}
+
+/* Anchor Tag Styling */
+nav a {
+  text-decoration: none;
+  color: #590b0a;
+  font-size: 1rem;
+}
+
+/* Hover Effect for Links */
+nav a:hover {
+  color: hsl(1, 80%, 35%);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  /* Adjust navbar to a column layout */
+  nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* Hide the menu by default */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    padding-top: 1rem;
+  }
+  /* Show the menu when active */
+  nav ul.active {
+    display: flex;
+  }
+  /* Adjust logo size for smaller screens */
+  .navbar-logo a {
+    font-size: 1.5rem;
+  }
+  /* Hamburger Menu Button (visible on small screens) */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+  /* Styling for hamburger icon lines */
+  .hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: #590b0a;
+    border-radius: 5px;
+  }
+}
+.main-section {
+  color: #f6f6f6;
+  position: relative;
+  height: 100vh;
+}
+
+.main-section img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.main-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.santas-helpers {
+  position: absolute;
+  bottom: 0;
+  margin-left: 3rem;
+  margin-bottom: 5rem;
+}
+
+.santas-helpers h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.santas-helpers p {
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-weight: medium;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  font-family: "Gothic A1", sans-serif;
+}
+
+.sweet-dreams-section {
+  position: relative;
+  width: 100vw;
+}
+
+.sweet-dreams-section img {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sweet-dreams-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sweet-dreams {
+  position: absolute;
+  bottom: 0;
+  margin-left: 3rem;
+  margin-bottom: 5rem;
+}
+
+.sweet-dreams h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.sweet-dreams p {
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-weight: medium;
+  color: white;
+}
+
+.the-gift-shop-section {
+  position: relative;
+  width: 100vw;
+}
+
+.the-gift-shop-section img {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.the-gift-shop-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.the-gift-shop {
+  position: absolute;
+  bottom: 0;
+  margin-left: 3rem;
+  margin-bottom: 5rem;
+}
+
+.the-gift-shop h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.the-gift-shop p {
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-weight: medium;
+  color: white;
+}
+
+footer {
+  background-color: #f2ede5;
+  padding: 4rem;
+}
+
+footer p {
+  color: #590b0a;
+  text-align: center;
+  font-size: large;
+  /* font-weight: 500;*/
+}
+
+#eng, #bos{
+  cursor: pointer;
+}
+
+#map{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2ede5;
+  padding-top: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+#accordion{
+  position: absolute;
+  display: block;
+  background-color: rgb(255, 255, 255);
+}
+
+.accordingMenu{
+  padding: 15px;
+}
+
+
+body {
+  font-family: Courier, sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  background-color: #032541;
+}
+
+input {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.weather_description {
+  color: black;
+  margin-top: 2rem;
+}
+
+
+
+/**/
+
+
+
+/**/
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Gothic A1", sans-serif;
+}
+
+.about-us-text {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5d5a65;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.about-us-text h2 {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.about-us-text p {
+  padding-top: 1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-us-location {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #f6f6f6;
+}
+
+.about-us-location iframe {
+  width: 100%;
+  height: 60vh;
+  margin: 2rem;
+}
+
+/*# sourceMappingURL=about-us.css.map */
+
+
+
+
+/**/
+
+
+
+
+/**/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Gothic A1", sans-serif;
+}
+
+.our-childhood-for-you {
+  text-align: center;
+  padding: 5rem;
+  background-color: #f6f7f6;
+}
+
+.our-childhood-for-you-title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #9c846c;
+  letter-spacing: 0.4rem;
+}
+
+.our-childhood-for-you-title h3 {
+  margin-bottom: 2.5rem;
+  color: #b8a491;
+  font-weight: lighter;
+  font-size: medium;
+  letter-spacing: 0.1rem;
+}
+
+.our-childhood-for-you-text p {
+  line-height: 1.5rem;
+  color: hsl(324, 15%, 40%);
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  margin: 4rem;
+  line-height: 2rem;
+}
+
+table td {
+  font-size: large;
+  font-weight: bold;
+  padding: 0.5rem;
+  color: #9c846c;
+}
+
+table th {
+  text-align: right;
+  color: #b8a491;
+}
+
+table a {
+  text-decoration: none;
+  color: #9c846c;
+}
+
+table a:hover {
+  color: #b8a491;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #b8a491;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: white;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us h4 {
+  font-size: xx-large;
+  color: #4d5362;
+  padding-bottom: 0.5rem;
+  margin: 0;
+}
+
+.contact-us p {
+  font-size: large;
+  color: #737e93;
+  margin: 0;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: #4d5362;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.form-group span {
+  color: red;
+}
+
+.name-fields {
+  display: flex;
+  gap: 1rem;
+}
+
+.name-fields input {
+  flex: 1;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+#submit:hover{
+  border: 2px solid gray
+}
+
+/*# sourceMappingURL=contact.css.map */
+
+
+/**/
+
+/**/
+
+
+#glavni{
+  position: relative;
+  /*display: none;*/
+}
+
+.boys-clothes-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.malaSlika{
+  cursor: pointer;
+}
+
+.card {
+  width: 25%;
+}
+
+#viewMore{
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  position: absolute;
+  background-color: black;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#relative{
+  position: relative;
+}
+
+#opacity{
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  opacity: 70%;
+}
+
+#slika{
+  position: relative;
+  z-index: 3;
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  border: none;
+  padding: 10px;
+}
+
+button:hover{
+  background-color: #808080ab;
+}
+
+button a{
+  border: none;
+  text-decoration: none;
+  color: black;
+}
+
+button a:hover{
+  color: black;
+}
+
+#dodatak1,#dodatak2,#dodatak3,#dodatak4,#dodatak5,#dodatak6,#dodatak7,#dodatak8,#dodatak9,#dodatak10,#dodatak11,#dodatak12,#dodatak13,#dodatak14,#dodatak15,#dodatak16{
+  display: none;
+}
+
+.descriptions{
+  display: flex;
+  justify-content: space-between;
+}
+
+.prizes{
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons{
+  display: flex;
+}
+
+/*# sourceMappingURL=boys-clothes.css.map */

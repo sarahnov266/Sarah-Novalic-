@@ -1,0 +1,111 @@
+<!--menu
+<nav class="navbar sticky-top bg-body-tertiary">
+  <div class="navbar-logo"><a href="../main/index.html">LittleStars</a></div>
+  <div class="hamburger" onclick="toggleMenu()">
+  <ul>
+    <li><a href="#sweet-dreams" class="translate">SWEET DREAMS</a></li>
+    <li><a href="#gift-shop" class="translate">GIFTS</a></li>
+    <li><a href="../about-us/about-us.html" target="_blank"  class="translate">ABOUT US</a></li>
+    <li><a href="../contact/contact.html" target="_blank"  class="translate">CONTACT </a></li>
+    <li style="color: #590b0a; cursor: pointer;" class="translate" onmouseleave="accordionHide()" onclick="accordion()">CLOTHES</a>
+      <div id="accordion" onmouseleave="accordionHide()">
+        <ol style="padding: 0px; margin: 0px;">
+          <li class="accordingMenu" ><a href="../boys-clothes/boys-clothes.html" target="_blank"  class="translate">BOYS CLOTHES</a></li>
+          <li class="accordingMenu" ><a href="../girls-clothes/girls-clothes.html" target="_blank"  class="translate">GIRLS CLOTHES</a></li></li>
+        </ol>
+      </div>
+    </li>-->
+    <!--
+    <li>
+    <li onclick="prijevod('engleski')" id="eng">ENG</li>
+    <li onclick="prijevod('bosanski')" id="bos">BOS</li>-->
+    <!--<li class="translate">FS&nbsp;&nbsp;
+      <select name="" id="" onchange="velicinaFonta(this.value)">
+        <option value="/">/</option>
+        <option value="10">10</option>
+        <option value="12">12</option>
+        <option value="14">14</option>
+        <option value="16">16</option>
+        <option value="18">18</option>
+        <option value="20">20</option>
+      </select>
+    </li>
+  </ul>
+</nav>-->
+
+
+<section class="main-section">
+  <img src="../assets/slike/main-photo.webp" alt="Main photo" />
+  <div class="main-overlay"></div>
+  <div class="santas-helpers">
+    <h1 class="display-1 translate">Santa's little helpers</h1>
+    <p class="translate">This year's Christmas collection</p>
+  </div>
+</section> 
+
+
+<div class="hstack gap-3">
+<section class="card-section">
+  <div class="card" style="width: 18rem; border: none; align-items: center">
+    <img src="../assets/slike/boy.avif" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <p class="card-text translate" style="font-weight: 600">Boys clothes</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; border: none; align-items: center">
+    <img src="../assets/slike/girl.avif" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <p class="card-text translate" style="font-weight: 600">Girls clothes</p>
+    </div>
+  </div>
+</section>
+</div>
+
+<section id="sweet-dreams" class="sweet-dreams-section">
+  <img src="../assets/slike/sweet-dreams-photo.webp" alt="Sweet dreams photo" />
+  <div class="sweet-dreams-overlay"></div>
+  <div class="sweet-dreams">
+    <h1 class="display-1 translate">Sweet dreams</h1>
+    <p class="translate">Soft and timeless nightwear</p>
+  </div>
+</section>
+
+
+<section id="gift-shop" class="the-gift-shop-section">
+  <img src="../assets/slike/the-gift-shop-photo.webp" alt="The gift shop photo" />
+  <div class="the-gift-shop-overlay"></div>
+  <div class="the-gift-shop">
+    <h1 class="display-1 translate">The gift shop</h1>
+    <p class="translate">Soft and timeless Christmas gifts ✨</p>
+  </div>
+</section>
+
+<section style="padding: 20px; background-color: #dfc8a3;">
+  <input type="text" id="cityInput" name="cityInput" placeholder="Input City" />
+<button onclick="fetchWeather()">
+    Submit
+</button>
+<h5 id="error"></h5>
+<h3 id="city"></h3>
+<div id="weather"></div>
+</section>
+
+
+<footer>
+  <div class="vstack gap-3">
+    <p class="translate">Foundations Of The Web Development</p>
+    <p class="translate">Sarah Novalić</p>
+</div>
+</footer>
+
+<script>
+  
+</script>
+
+
+<script>
+function toggleMenu() {
+    const menu = document.querySelector('nav ul');
+    menu.classList.toggle('active');
+}
+</script>

@@ -1,0 +1,85 @@
+<div class="our-childhood-for-you">
+    <div class="our-childhood-for-you-title">
+      <h1 class="display-1" class="translate">OUR CHILDHOOD FOR YOU!</h1>
+      <h3 class="translate"12">WE DO WHAT WE LOVE, AND WE LOVE TO SHARE IT WITH YOU</h3>
+    </div>
+    <div class="our-childhood-for-you-text">
+      <p class="translate">
+        A carefree childhood is one of the greatest gifts in life - precious and unforgettable. We try to feel at one with the beauty and pureness of nature for a lifetime. We believe in the real values of a pure childhood: simple, far, organic
+        <span style="color: black">#thetruethingsinlife</span>
+      </p>
+    </div>
+  </div>
+
+  <form action="">
+    <div class="contact-form">
+      <div class="contact-us">
+        <h4 class="translate">Contact Us</h4>
+        <p  class="translate">Please fill this form in a decent manner</p>
+        <hr />
+      </div>
+      <div class="form-group full-name">
+        <label for="firstname" class="translate">Full Name <span>*</span></label>
+        <div class="name-fields">
+          <input type="text" name="firstname" id="firstname" placeholder="First Name" required />
+          <input type="text" name="lastname" id="lastname" placeholder="Last Name" required />
+        </div>
+      </div>
+
+      <div class="form-group password">
+        <label for="password" class="translate">Password <span>*</span></label>
+        <input onkeyup="checkIndicator()" id="password" type="password" placeholder="Password">
+        <div>
+            <p id="indicator" style="padding: 0px; margin: 0px; font-size:10px;">&nbsp;&nbsp;Indicator for password</p>
+        </div>
+      </div>
+
+      <div class="form-group e-mail">
+        <label for="email" class="translate">E-mail <span>*</span></label>
+        <input type="email" name="email" id="email" placeholder="example@example.com" required />
+      </div>
+      <div class="form-group message">
+        <label for="message" class="translate">Message <span>*</span></label>
+        <textarea name="message" id="message" placeholder="Write your message here..." required></textarea>
+      </div>
+      <div>
+        <p id="indicator" style="padding: 0px; margin: 0px; font-size:10px;" class="translate">&nbsp;&nbsp;Polja oznacena sa * moraju biti ispunjena!</p>
+      </div>
+      <button id="submit" type="button" class="btn btn-light" onclick="validateForm()">SUBMIT</button>
+      </div>
+  </form>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel" class="translate">Thank you!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" class="translate">
+          Thank you for contacting us! We will get back to you shortly.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <table>
+    <tr>
+      <td class="translate">Mail to:</td>
+      <th><a href="mailto:amela.vatres@stu.ibu.edu.ba" target="_blank" class="translate">amela.vatres@stu.ibu.edu.ba</a></th>
+    </tr>
+    <tr>
+      <td class="translate">Contact number:</td>
+      <th class="translate">+123 456 789</th>
+    </tr>
+  </table>
+
+  <footer>
+    <div class="vstack gap-3">
+      <p class="translate">Foundations Of The Web Development</p>
+      <p class="translate">Sarah Novalić</p>
+    </div>
+  </footer>
